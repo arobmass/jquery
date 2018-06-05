@@ -25,11 +25,18 @@
 
     <script>
 
-      $.get("info.text", function(data) {
+      $.ajax("info.txt").done(function(data){
 
           alert(data);
 
-      });
+
+
+
+    }).fail(function() {
+
+      alert("Didn't happen")
+
+    });
 
 
 
