@@ -14,7 +14,7 @@
 
   <body>
 
-
+      <p></p>
 
 
 
@@ -25,9 +25,9 @@
 
     <script>
 
-      $.ajax("info.txt").done(function(data){
+      $.ajax("info.text").done(function(data){
 
-          alert(data);
+          $("p").html(data);
 
 
 
